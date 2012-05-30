@@ -8,7 +8,7 @@ class Julia < Formula
   depends_on "readline"
   depends_on "pcre"
   depends_on "gmp"
-  depends_on "llvm"
+  depends_on "nolta/julia/llvm"
   depends_on "glpk"
   depends_on "suite-sparse"
   depends_on "nolta/julia/arpack-ng"
