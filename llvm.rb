@@ -23,13 +23,6 @@ class Llvm < Formula
 
   head      'http://llvm.org/git/llvm.git'
 
-  def patches
-    # changes the link options for the shared library build
-    # to use the preferred way to build libraries in Mac OS X
-    # Reported upstream: http://llvm.org/bugs/show_bug.cgi?id=8985
-    DATA if build_shared?
-  end
-
   def options
     [['--with-clang', 'Build clang'],
      ['--analyzer', 'Build clang analyzer'],
@@ -114,6 +107,3 @@ class Llvm < Formula
     buildpath/'tools/clang'
   end
 end
-
-
-__END__
