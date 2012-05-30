@@ -11,7 +11,7 @@ class Julia < Formula
   depends_on "llvm"
   depends_on "glpk"
   depends_on "suite-sparse"
-  depends_on "staticfloat/julia/arpack-ng"
+  depends_on "nolta/julia/arpack-ng"
   depends_on "lighttpd"
   depends_on "fftw"
   depends_on "tbb"
@@ -36,7 +36,7 @@ class Julia < Formula
       ln_s "#{Formula.factory('fftw').lib}/libfftw3#{ext}.dylib", "usr/lib/"
     end
 
-    ln_s "#{Formula.factory('staticfloat/julia/arpack-ng').lib}/libarpack.dylib", "usr/lib/"
+    ln_s "#{Formula.factory('nolta/julia/arpack-ng').lib}/libarpack.dylib", "usr/lib/"
 
     # Build up list of build options
     build_opts = ["PREFIX=#{prefix}"]

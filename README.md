@@ -5,6 +5,6 @@ A small tap for the [Homebrew project](http://mxcl.github.com/homebrew/) to inst
 
 To install:
 
-`brew tap staticfloat/julia`
+`brew tap nolta/julia`
 
 `brew install --HEAD julia`
