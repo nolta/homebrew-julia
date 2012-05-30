@@ -62,10 +62,6 @@ class Julia < Formula
     # Install!
     system "make", *(build_opts + ["install"])
 
-    # Final install step, symlink julia binary and webserver into bin:
-    bin.install_symlink "#{share}/julia/julia"
-    bin.install_symlink "#{share}/julia/launch-julia-webserver"
-
     # and for boatloads of fun, we'll make the test data, and allow it to be run from `brew test julia`
     system "make", "-C", "test/unicode/"
     cp_r "test", "#{share}/julia/"
