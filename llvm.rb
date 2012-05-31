@@ -39,6 +39,7 @@ class Llvm < Formula
       "--enable-optimized",
       "--enable-shared",
       "--disable-assertions",
+      "--disable-threads",
       # As of LLVM 3.0, the only bindings offered are for OCaml and attempting
       # to build these when Homebrew's OCaml is installed results in errors.
       #
