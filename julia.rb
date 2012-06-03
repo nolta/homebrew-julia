@@ -17,6 +17,9 @@ class Julia < Formula
   depends_on "tbb"
   depends_on "metis"
 
+  # don't strip binaries
+  skip_clean ['bin']
+
   def install
     ENV.fortran
 
